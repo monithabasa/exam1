@@ -9,7 +9,7 @@ CSS Stylesheet for Exam 1
     position: absolute;
     top: -20px;
     height: 35px ;
-    background-color: #D3D3D3;
+    background-color: lightgray;
 }
 .skip a:focus {
     top: 20px;
@@ -21,7 +21,7 @@ CSS Stylesheet for Exam 1
 
 /* Default Mobile View*/
 body {
-    background-color: #ADD8E6; 
+    background-color: lightblue; 
     display: flex;
     justify-content: center;
 }
@@ -44,6 +44,49 @@ body {
 }
 
 /* View 2*/
+@media (min-width: 850px) {
+    body {
+        background-color: orange;
+    }
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .container img{
+        width: 70%;
+        border: 15px dashed purple;
+        padding: 20px;
+    }
+    .container img:nth-child(3n) {
+        width: 50%;
+        border: 20px dotted green;
+    }
+    .container img:nth-child(9) {
+        width: 40%;
+    }
+}
 
-
+/* View 3*/
+@media (min-width: 1050px) {
+    body {
+        background-color: purple;
+    }
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .container img{
+        width: 80%;
+        border: 20px ridge blue;
+        padding: 20px;
+    }
+    .container img:nth-child(4) {
+        width: 30%;
+    }
+    .container img:nth-child(6) {
+        width: 80%;
+    }
+}
 
