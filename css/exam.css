@@ -1,0 +1,49 @@
+/*
+Monitha Basa
+CSS Stylesheet for Exam 1
+*/
+
+/* Skip to main content*/
+
+.skip a{
+    position: absolute;
+    top: -20px;
+    height: 35px ;
+    background-color: #D3D3D3;
+}
+.skip a:focus {
+    top: 20px;
+}
+
+*:focus {
+    border: 2px solid black;
+}
+
+/* Default Mobile View*/
+body {
+    background-color: #ADD8E6; 
+    display: flex;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.container img{
+    width: 80%;
+    border: 10px groove brown;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+.container img:nth-child(9) {
+    width: 70%;
+}
+
+/* View 2*/
+
+
+
